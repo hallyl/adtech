@@ -1,0 +1,187 @@
+body{
+	background: url("back.jpeg");
+	background-size: inherit;
+}
+
+.container{
+	margin-top: 10%;
+	margin-right: 10%;
+	float:right;
+	height: 400px;
+	width: 700px;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	left: 50%;
+	right: 40%;
+	border:2 px solid #fff;
+	background-size: 100% 100%;
+	box-shadow:1px 2px 10px 5px white;	
+}
+
+.container .formstyler{
+	float: right;
+	width: 50%;
+	padding: 60px 40px;
+	box-sizing: border-box;
+	height: 400px;
+	background: #fff;
+	background-color: #fff;
+}
+
+.formstyler p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.formstyler input
+{
+	width: 90%;
+	margin-bottom: 20px;
+	background: transparent;
+}
+
+.formstyler input[type="text"]
+{
+	border: none;
+	border-bottom: 2px solid #fb2525;
+	outline: none;
+	height: 30px;
+}
+
+.formstyler input[type="text"]:focus,
+.formstyler input[type="textarea"]:focus
+{
+	border-bottom: 2px solid #ffc107;
+}
+
+
+.formstyler input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	color:#fff;
+	background:#fb2525;
+	cursor: pointer;
+}
+
+.formstyler input[type="submit"]:hover
+{
+	background: #ffc107;
+}
+
+
+.reader{
+	float: left;
+	width: 50%;
+	padding: 60px 40px;
+	box-sizing: border-box;
+	height: 400px;
+	background: rgba(0, 0, 0, 0.3); 
+}
+
+.reader p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.formstyler textarea{
+	width: 90%;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 2px solid #ffc107;
+	outline: none;
+	height: 70px;
+	background: transparent;
+}
+
+.reader input[type="text"]
+{
+	width: 90%;
+	margin-bottom: 20px;
+	color: white;
+	border: none;
+	border-bottom: 2px solid #fb2525;
+	outline: none;
+	height: 30px;
+	background: transparent;
+}
+
+.reader input[type="date"]
+{
+	margin-bottom: 20px;
+	color: white;
+	width: 50%;
+	border: none;
+	border-bottom: 2px solid #fb2525;
+	outline: none;
+	height: 30px;
+	background: transparent;
+}
+
+.reader input[type="radio"]
+{
+	width: 5%;
+	background: transparent;
+}
+
+
+.register{
+	margin-top: 5%;
+	margin-right: 10%;
+	height: 80%;
+	width: 500px;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	left: 35%;
+	right: 35%;
+	border:2 px solid #fff;
+	background-size: 100% 100%;
+	box-shadow:1px 2px 10px 5px #fb2525;	
+	padding: 20px 10px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.register input[type="text"]
+{
+	margin-left: 10%;
+	width: 80%;
+	margin-bottom: 10px;
+	color: white;
+	border: none;
+	border-bottom: 2px solid #fb2525;
+	outline: none;
+	height: 30px;
+	background: transparent;
+}
+
+
+.register textarea{
+	margin-left: 10%;
+	width: 80%;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 2px solid #ffc107;
+	outline: none;
+	height: 50px;
+	background: transparent;
+}
+
+.register label{
+	margin-left: 10%;
+	color: #fb2525;
+}
+
+.register input[type="submit"]
+{
+	margin-left: 30%;
+	height: 30px;
+	width: 40%;
+	background: #ffc107;
+}
+
