@@ -11,34 +11,52 @@
 <p>
 	<fieldset>
 		<legend>Personal Records</legend>
-<input type="text" name="patName" placeholder="Name">
-<input type="text" name="patAdd" placeholder="Address"><br/>
+<input type="text" name="patName" id="patName" placeholder="Name">
+<input type="text" name="patAdd" id="patAdd" placeholder="Address"><br/>
 <label for="patDOB">Date of Birth:	</label>
-<input type="date" name="patDOB" placeholder="Date of Birth"><br/>
+<input type="date" name="patDOB" id="patDOB" placeholder="Date of Birth"><br/>
 
 <label for="gender">Patient's Sex:	</label>
-<input type="radio" name="gender" value="male">male
-<input type="radio" name="gender" value="female">female
+<input type="radio" name="gender" id="male" value="male">male
+<input type="radio" name="gender" id="female" value="female">female
 <br/>
 <label for="ms">Marital Status:	</label>
-<input type="radio" name="ms" value="married">Married
-<input type="radio" name="ms" value="single">Single
-<input type="radio" name="ms" value="other">Other<br/>
-<input type="text" name="patNat" placeholder="Nationality">
+<input type="radio" name="ms" id="married" value="married">Married
+<input type="radio" name="ms" id="single" value="single">Single
+<input type="radio" name="ms" id="other" value="other">Other<br/>
+<input type="text" name="patNat" id="patNat" placeholder="Nationality">
 	</fieldset>
 	</br>
 	<fieldset>
 		<legend>Specified details</legend>
 
-<input type="text" name="patCode" placeholder="Distinct Code">
-<input type="text" name="patBld" placeholder="Blood Group">
+<input type="text" name="patCode" id="patCode" placeholder="Distinct Code">
+<input type="text" name="patBld" id="patBld" placeholder="Blood Group">
 
-<textarea placeholder="Patient's medical report" rows="4" cols="20"></textarea>
-<textarea placeholder="Overall health status" rows="4" cols="20"></textarea>
+<textarea placeholder="Patient's medical report" id="patMed" rows="4" cols="20"></textarea>
+<textarea placeholder="Overall health status" id="patOHS" rows="4" cols="20"></textarea>
 	</fieldset></br>
-	<input type="submit" name="submit" value="Register">
+	<input type="submit" name="submit" id="submit" value="Register">
 </p>
 </form>
+
+<script src="https://www.gstatic.com/firebasebasejs/6.3.1/firebase-app.js"></script>
+<script>
+	var firebaseConfig = {
+			apiKey: "AIzaSyDKemERNtJH-j2iPFmxXDc-Xw7m9k1omTQ",
+			authDomain: "adtech-84995.firebaseapp.com",
+			databaseURL: "https://adtech-84995.firebaseio.com",
+			projectId: "adtech-84995",
+			storageBucket:"",
+			messagingSenderId: "795847057867",
+			appId: "1:795847057867:web:35fc3466642e1738"
+		};
+		firebase.initializeApp(firebaseConfig);
+	
+</script>
+<script src="/__/firebase/6.3.1/firebase-auth.js"></script>
+<script src="/__/firebase/6.3.1/firebase-firestore.js"></script>
+<script src="/__/firebase/init.js"></script>
 </body>
 </div>
 
