@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 @import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
 
-body,html{
+body{
   padding: 0; 
   margin: 0; 
   height :100%;
@@ -15,13 +15,7 @@ body,html{
   
  }
  
- section{
- 
- 
- }
- 
-
-.navbar-brand {ADTECH PATIENT'S MEDICAL RECORD SYSTEM
+.navbar-brand {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase
 }
@@ -208,17 +202,12 @@ footer{
     font-size:18px;
 }
 
-.adtech{
-position : relative;
+.info h1{
+position :relative;
 top : 100px;
 border-left: 2px solid #fb2525;
 color : rgba(0,0,0,0.9);
  }
-
- *
-{
-    outline: none;
-}
 
 
 .tb
@@ -376,7 +365,7 @@ button span:before, button span:after
 
 .text h4{
  text-align: center;
- color : #fb2525;
+ color : rgba(0,0,0,0.8);
  position : relative;
  top : 140px;
  font-family : roboto;

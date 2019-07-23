@@ -214,8 +214,11 @@ footer{
      background-color: #1ddbb5;
      padding:30px 0px;
      font-family: 'Roboto', sans-serif;
-     position : absolute;
+     position : relative;
+     left : 0;
+     right :0;
      bottom : 0;
+     
 }	       
 
 .logo{
