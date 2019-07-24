@@ -1,10 +1,20 @@
-var rootRef = firebase.database().ref("User");
+function getDatabaseRef(){
+	console.log('Script called');
+	
+	var firebaseRef = firebase.database().ref();
+	console.log(firebaseRef.ref);
+	window.alert(firebaseRef);
+	
+	console.log('Script finished');
+	}
+	
+//var firebaseRef = firebase.database().ref();
 
 document.getElementById("registerForm").addEventListener('submit', submitForm);
 
 function submitForm(e){
 	
-	e.preventDefault();
+	//e.preventDefault();
 	
 	var Name = getInputVal('');
 	var name = getInputVal("patName").value;
@@ -41,7 +51,7 @@ function getInputVal(id){
 }
 
 function saveForm(name, address, dateOB, selectedGender, status, nationality, patNum, blood, medical, overall){
-	var newDataRef = rootRef.push();
+	var newDataRef = firebase.database().ref().push();
 	newDataRef.set({
 			Name: name, 
 			Address: address, 
