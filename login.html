@@ -1,31 +1,28 @@
 <html>
 <head>
 <title>Login Form Design</title>
-    <link rel="stylesheet" type="text/css" href="login.css">
-    
-</head>   
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <script type="text/javascript" src="validate.js"></script>
+</head>
 
 <body>
     <div class="loginbox">
     <img src="avatar.png" class="avatar">
         <h1>Login Here</h1>
-        <form>
+        <form onsubmit="return valid()" action="register.html">
             <div class="form">
-            <p>E-mail Address</p>
-            <input type="text" name="" id="docEml" placeholder="staff@login.com" required>
+            <p>Full name</p>
+            <input type="text" name="" id="docName" placeholder="Full name">
             <p>Password</p>
-            <input type="password" name="" id="docPass" placeholder="Enter Password" required>
-            <input type="submit" name="" id="submit" value="Login" onclick="login()">
+            <input type="password" name="" id="docPass" placeholder="Enter Password">
+            <input type="submit" name="" id="submit" value="Login" >
             <a href="#">Lost your password?</a><br>
             <a href="#">Don't have an account?</a>
+
             </div>
         </form>
     </div>
-    
 
-<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
-<script src="auth.js"></script>
-<script src="login.js"></script>
 
 </body>
 </head>
