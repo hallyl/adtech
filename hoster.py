@@ -6,10 +6,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/connect')
-def connect():
-    return render_template('connect.php')
-
 @app.route('/login')
 def login():
     return render_template('login.html')
