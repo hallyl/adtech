@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="static/style.css"/>
+<link rel="stylesheet" type="text/css" href="/static/style.css"/>
 <title>Update Patient Record</title>
 </head>
+
+<?php
+	include'connect.php';
+  if(isset($_POST["submit"]))
+  {
+    $ptoday=$_POST["patCon"];
+    $prescription=$_POST["patPresc"];
+  }
+  if ($currID ==($_GET["pcode"]){
+		$patName=$_GET["pname"];
+		$patLoc=$_GET["paddress"];
+		$patAge=$_GET["dob"];
+		$gender=$_GET["pgender"];
+		$patCode=$_GET["patCode"];
+		$patBld=$_GET["pblood"];
+		$patNat=$_GET["pnationality"];
+}
+?>
+
 <body>
 <div class="container">
 <div class="formstyler">
 <form method="post">
 <p>
-<input type="text" id="currName" name="currName" placeholder="Name"><br/>
-<textarea placeholder="Today's Condition" id="patCon" rows="5" cols="28"></textarea>
+<input type="text" id="currID" name="currID" placeholder="Patient ID"><br/>
+<textarea placeholder="Today's Condition" id="patCon" rows="5" cols="28" name="patCon"></textarea>
 <input type="text" name="patPresc" id="patPresc" placeholder="Prescription"><br/><br/>
 
 <input type="submit" name="submit" id="submit" value="update">
