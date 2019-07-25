@@ -1,1 +1,1 @@
-web: gunicorn -w 4 homepage:app
+web: gunicorn -w 4 hoster:app
