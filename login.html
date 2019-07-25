@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="static/login.css"/>
+    <script type="text/javascript" src="static/validate.js"></script>
+</head>
+
+<body>
+    <div class="loginbox">
+    <img src="static/avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form onsubmit="return valid()" action="/login/search">
+            <div class="form">
+            <p>Full name</p>
+            <input type="text" name="" id="docName" placeholder="Full name">
+            <p>Password</p>
+            <input type="password" name="" id="docPass" placeholder="Enter Password">
+            <input type="submit" name="" id="submit" value="Login" >
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
+
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</head>
+</html>
