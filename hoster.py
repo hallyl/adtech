@@ -8,7 +8,7 @@ from wtforms.validators import DataRequired, Length, Email, EqualTo, required
 #from register import SubmitMe
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '40812a5e2dd9a9078195e925348e47f8'
+#app.config['SECRET_KEY'] = '40812a5e2dd9a9078195e925348e47f8'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:patientino@localhost/postgres'
 db = SQLAlchemy(app)
 
